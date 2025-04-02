@@ -1,6 +1,10 @@
 # EDD API Chrome Extension
 This Chrome extension allows you to fetch and display Easy Digital Downloads (EDD) purchase records directly from FreshDesk tickets or by manually entering an email.
 
+![Popup Example](https://github.com/wpbean/EDD-API-Chrome-Extension/blob/main/Screenshot1.png?raw=true)
+
+![FreshDesk Example](https://github.com/wpbean/EDD-API-Chrome-Extension/blob/main/Screenshot2.png?raw=true)
+
 ## 🚀 Setup & Installation
 Follow these steps to set up and use the extension:
 
