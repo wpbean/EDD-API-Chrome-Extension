@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "EDD API Chrome Extension",
+    "version": "1.0",
+    "description": "Fetch and display purchase records from the EDD API.",
+    "permissions": ["scripting", "storage", "activeTab"],
+    "host_permissions": ["https://wpbean.freshdesk.com/a/tickets/*"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://wpbean.freshdesk.com/a/tickets/*"],
+            "js": ["content.js"],
+            "css": ["style.css"]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+.edd-info-box {
+    background: #f5f7f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.edd-info-box h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.edd-info-box ul {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.edd-info-box li {
+    font-size: 0.85em;;
+    list-style: none;
+    margin: 0 !important;
+    padding: 7px 10px;
+}
+
+.edd-info-box li:nth-child(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.edd-info-box li:nth-child(even) {
+    background: #fff;
+}
+
+.edd-info-box li:not(:last-child),
+.license-list li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+/* License list styles */
+.license-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.license-list li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.license-key {
+    font-family: monospace;
+    word-break: break-word;
+    max-width: 100%;
+    white-space: normal;
+    font-size: 0.7em;
+}
+
+/* Status indicators */
+.status-active {
+    display: inline-block;
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    background: #28a745;
+    border-radius: 50%;
+}
+
+.status-expired {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #dc3545;
+    border-radius: 50%;
+}
+
+.status-pending {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #ffc107;
+    border-radius: 50%;
+}
+
+.edd-loading {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.edd-loading .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error {
+    color: red;
+}
+.order-date {
+    display: flex;
+    font-size: 0.8em;
+}
+.d-flex {
+    display: flex;
+}
+.g-5 {
+    gap: 5px;
+}

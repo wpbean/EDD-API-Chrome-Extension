@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EDD Purchases</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <h3 class="mt-0">Check EDD Purchases</h3>
+        <div class="input_area">
+            <input type="email" id="emailInput" placeholder="Enter email..." />
+            <button id="fetchData">Check Purchases</button>
+            <div class="edd-loading" id="loading" style="display: none">
+                <span class="spinner_wrapper">
+                    <span class="spinner"></span> Fetching purchase details...
+                </span>
+            </div>
+        </div>
+        <div id="results"></div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 320px;
+    padding: 10px;
+    background: #f8f9fa;
+}
+.input_area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input,
+button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+button:hover,
+button:focus {
+    background: #0056b3;
+}
+.edd-box {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.text--xsmall {
+    font-size: 12px;
+    font-weight: 600;
+}
+.text--semibold {
+    font-weight: bold;
+}
+.order-date {
+    font-size: 11px;
+    color: #aaa;
+}
+.license-list {
+    list-style: none;
+    padding: 0;
+}
+.license-key {
+    font-size: 12px;
+}
+.status-active {
+    color: green;
+}
+.status-expired {
+    color: red;
+}
+.edd-loading {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    justify-content: center;
+}
+.spinner_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.spinner {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#results {
+    margin-top: 10px;
+}
+.d-flex {
+    display: flex;
+}
+.g-5 {
+    gap: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+
+#results ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+#results ul li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 10px;
+}
+.order-date {
+    display: flex;
+}
+
+#results li:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#results li:nth-child(even) {
+    background: #fff;
+}
+#results ul.license-list {
+    margin-bottom: 0;
+}
